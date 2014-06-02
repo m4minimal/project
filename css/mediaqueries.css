@@ -1,0 +1,45 @@
+/* IE10+ VIEPORT FIX */
+
+@-ms-viewport {width: device-width;}
+@viewport { width: device-width; }
+
+/* Phone - 767px */
+
+@media screen and (max-width: 767px) {
+	.nav-menu {
+		font-family: 'Helvetica Neue', Helvetica, sans-serif;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: bold;
+		font-size: 14px;
+		float: left;
+		color: #adb5be;
+		display: block;
+		padding: 25px 10px 20px 10px;
+		cursor: pointer;
+	}
+	.nav-list {
+
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		height: 0;
+	}
+	.nav-open {
+		height: auto;
+	}
+
+	.nav-list li {
+		border-bottom: 1px solid #243140;
+		width: 100%;
+	}
+
+	.nav-list li a:hover {
+	    color: #1799dd;
+	    border-bottom: solid 2px transparent;
+	}
+
+	menu, ol, ul {
+		padding-left: 0;
+	}
+}
